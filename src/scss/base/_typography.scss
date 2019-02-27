@@ -3,23 +3,128 @@
 *------------------------------------*/
 
 $font-family__light: "helveticaneue-light, helvetica neue";
-$font-family__regular: "helveticaneue, helvetica neue";
+$font-family__regular: #{"Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif};
 $font-family__medium: "helveticaneue-medium, helvetica neue";
 
 /*------------------------------------*
 	SASS FONT SIZE VARIABLES
 *------------------------------------*/
 
-$font-base-size
+$font-base-size: 16;
 
-$text-size__jumbo: 52px;
+$text-size__jumbo: px-to-rem(52, $font-base-size);
 
-$text-size__xx-large: 36px;
-$text-size__x-large: 28px;
-$text-size__large: 19px;
-$text-size__medium: 18px;
-$text-size__small: 16px;
-$text-size__x-small: 14px;
-$text-size__xx-small: 13px;
+$text-size__xx-large: px-to-rem(36, $font-base-size);
+$text-size__x-large: px-to-rem(28, $font-base-size);
+$text-size__large: px-to-rem(19, $font-base-size);
+$text-size__medium: px-to-rem(18, $font-base-size);
+$text-size__small: px-to-rem(16, $font-base-size);
+$text-size__x-small: px-to-rem(14, $font-base-size);
+$text-size__xx-small: px-to-rem(13, $font-base-size);
 
-$text-size__tiny: 12px;
+$text-size__tiny: px-to-rem(12, $font-base-size);
+
+/*------------------------------------*
+	SASS LINE HEIGHT VARIABLES
+*------------------------------------*/
+
+$line-height__jumbo: 1.07;
+
+$line-height__xx-large: 1.11;
+$line-height__x-large: 1.142;
+$line-height__large: 1.26;
+$line-height__medium: 1.26;
+$line-height__small: 1.5;
+$line-height__x-small: 1.714;
+$line-height__xx-small: 1.23;
+
+$line-height__tiny: 1.333;
+
+/*------------------------------------*
+	GLOBAL BODY CLASSES
+*------------------------------------*/
+
+body {
+  font-family: $font-family__regular;
+}
+
+/*------------------------------------*
+	SIZE CLASSES
+*------------------------------------*/
+
+.text-size {
+
+  &--jumbo{
+    font-size: $text-size__jumbo;
+    line-height: $line-height__jumbo;
+  }
+
+  &--xx-large{
+    font-size: $text-size__xx-large;
+    line-height: $line-height__xx-large;
+  }
+
+  &--x-large{
+    font-size: $text-size__x-large;
+    line-height: $line-height__x-large;
+  }
+
+  &--medium{
+    font-size: $text-size__medium;
+    line-height: $line-height__medium;
+  }
+
+  &--small{
+    font-size: $text-size__small;
+    line-height: $line-height__small;
+  }
+
+  &--x-small{
+    font-size: $text-size__x-small;
+    line-height: $line-height__x-small;
+  }
+
+  &--xx-small{
+    font-size: $text-size__xx-small;
+    line-height: $line-height__xx-small;
+  }
+
+  &--tiny{
+    font-size: $text-size__tiny;
+    line-height: $line-height__tiny;
+  }
+
+}
+
+/*------------------------------------*
+	Text Colors
+*------------------------------------*/
+
+.text-color {
+
+  &--neon-fuchsia {
+    color: $neon-fuchsia;
+  }
+
+  &--dark-mint-green {
+    color: $dark-mint-green;
+  }
+
+  &--saffron {
+    color: $saffron;
+  }
+
+  &--navy-purple {
+    color: $navy-purple;
+  }
+
+  &--white {
+    color: $white;
+  }
+
+  &--basalt-grey {
+    color: $basalt-grey;
+  }
+
+
+}
