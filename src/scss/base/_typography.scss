@@ -69,6 +69,11 @@ body {
     line-height: $line-height__x-large;
   }
 
+  &--large{
+    font-size: $text-size__large;
+    line-height: $line-height__large;
+  }
+
   &--medium{
     font-size: $text-size__medium;
     line-height: $line-height__medium;
