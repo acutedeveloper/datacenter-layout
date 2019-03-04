@@ -1,0 +1,13 @@
+.title-block{
+	@apply flex items-center text-left px-4;
+	@screen md {
+        @apply flex-col text-center py-4;
+    }
+	&__logo {
+	@apply rounded-full mr-4 bg-white border border-grey p-1;
+	@screen md {
+        @apply mr-0;
+    }
+}
+
+}

@@ -1,0 +1,31 @@
+.grid {
+
+  $self: &;
+
+  @apply flex-wrap -mx-2;
+  @screen md {
+    @apply flex;
+  }
+
+  & + #{$self} {
+    margin-top: 1rem;
+  }
+
+  &__item {
+    @apply w-full p-2;
+
+    &--half {
+      @screen md {
+        @apply w-1/2;
+      }
+    }
+
+    &--third {
+      @screen md {
+        @apply w-1/3;
+      }
+    }
+
+  }
+
+}

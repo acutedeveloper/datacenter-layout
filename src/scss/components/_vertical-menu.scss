@@ -1,0 +1,15 @@
+.vertical-menu{
+	@apply h-full flex-col justify-between hidden;
+	@screen md {
+        @apply flex;
+    }
+	&__list {
+	@apply list-reset;
+	
+}
+&__link {
+	@apply block p-2 flex justify-between items-center border-solid border-l-4 border-white;
+	
+}
+
+}

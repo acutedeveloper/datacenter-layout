@@ -1,0 +1,8 @@
+.data-group{
+	@apply mb-4;
+
+	&--inline{
+		@apply flex;
+	}
+
+}

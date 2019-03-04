@@ -1,0 +1,13 @@
+.sidebar{
+	@apply  flex justify-between bg-white;
+	@screen md {
+        @apply w-1/5 flex-col;
+    }
+	&__menu-toggle {
+	@apply layout-block;
+	@screen md {
+        @apply hidden;
+    }
+}
+
+}

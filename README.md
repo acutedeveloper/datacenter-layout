@@ -4,6 +4,30 @@ Recreating a layout designed in a graphics application in code. This is an exerc
 
 ## Progress Log
 
+**Task: 04/03/19 10mins**
+
+Wrapping up adding names to blocks before running script.
+
+Ran layout through tailwind to scss script.
+Refining the css classes on html blocks.
+
+Wishlist Item:
+- A stream for the index file across this project folders.
+- A in folder script for tailwind to scss 
+
+---
+
+**Dealing with seemingly random occourences: 03/03/19 10mins**
+
+The struggle here was thinking on how to approach naming divs.
+
+Taking a step back, I needed to identify what the differeneces were. Once those had been identified I found the solution.
+
+The difference here was the borders on grid items. So my solution was to add a modifier class to the panel-grid__item div that will
+the add the borders that are needed.
+
+---
+
 **Continuing Pinegrow layout: 27/02/19 1h 30mins**
 
 I think initially the laying out process worked well, in that I could see a layout structure quite quickly.
@@ -19,23 +43,6 @@ I have come to the conclusion that I need to have a pattern of separating elemen
 - components
 
 There is still a challenge in naming components. I think I need names for more contexts, such as charts and data.
-
----
-
-**Task: 04/03/19 10mins**
-
-Wrapping up adding names to blocks before running script.
-
----
-
-**Dealing with seemingly random occourences: 03/03/19 10mins**
-
-The struggle here was thinking on how to approach naming divs.
-
-Taking a step back, I needed to identify what the differeneces were. Once those had been identified I found the solution.
-
-The difference here was the borders on grid items. So my solution was to add a modifier class to the panel-grid__item div that will
-the add the borders that are needed.
 
 ---
 
