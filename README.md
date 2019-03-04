@@ -22,6 +22,12 @@ There is still a challenge in naming components. I think I need names for more c
 
 ---
 
+**Task: 04/03/19 10mins**
+
+Wrapping up adding names to blocks before running script.
+
+---
+
 **Dealing with seemingly random occourences: 03/03/19 10mins**
 
 The struggle here was thinking on how to approach naming divs.

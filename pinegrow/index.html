@@ -9,10 +9,10 @@
         <title>New page</title>
         <link href="../dist/css/stylesheet.css" rel="stylesheet">
     </head>
-    <body>
+    <body class="bg-grey">
         <div class="max-w-3xl w-full m-auto md:flex" data-pg-name="wrapper">
-            <aside class="w-100 md:w-1/5 flex justify-between md:flex-col" data-pg-name="sidebar">
-                <div class="flex items-center md:flex-col md:text-center text-left" data-pg-name="title-block">
+            <aside class="w-100 md:w-1/5 flex justify-between md:flex-col bg-white" data-pg-name="sidebar">
+                <div class="flex items-center md:flex-col md:text-center text-left md:py-4 px-4" data-pg-name="title-block">
                     <img src="https://images.unsplash.com/photo-1550246209-e4395d8ae5eb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjIwOTIyfQq=85&fm=jpg&crop=faces&cs=srgb&w=60&h=60&fit=crop" class="rounded-full mr-4 md:mr-0 bg-white border border-grey p-1" data-pg-name="title-block__logo"/>
                     <div data-pg-name="title-block__labels">
                         <div data-pg-name="title-block__title">Datacenter Name</div>
@@ -67,9 +67,9 @@
                                         <div class="text-size--small">CPU Allocation</div>
                                         <div class="text-size--xx-large">83
                                             <span class="text-size--x-large">%</span>
-                                            <span class="rounded-full text-white text-size--small bg-green py-1 px-2">32%</span>
+                                            <span class="rounded-full text-white text-size--small bg-green py-1 px-2" data-pg-name="data-label">32%</span>
                                         </div>
-                                        <div data-pg-name="data-group__chart" class="layout-block">
+                                        <div data-pg-name="chart-container" class="layout-block ratio-block ratio-block--16x9">
                                             <p>Chart</p>
                                         </div>
                                     </div>
@@ -80,7 +80,7 @@
                                         <div class="text-size--large">83%
                                             <span class="rounded-full text-white text-size--small bg-green py-1 px-2">32%</span>
                                         </div>
-                                        <div class="layout-block" data-pg-name="chart-container">
+                                        <div class="layout-block ratio-block--16x9" data-pg-name="chart-container">
                                             <p>Chart</p>
                                         </div>
                                     </div>
@@ -89,7 +89,7 @@
                                         <div class="text-size--large">83%
                                             <span class="rounded-full text-white text-size--small bg-green py-1 px-2">32%</span>
                                         </div>
-                                        <div class="layout-block" data-pg-name="chart-container">
+                                        <div class="layout-block ratio-block--16x9" data-pg-name="chart-container">
                                             <p>Chart</p>
                                         </div>
                                     </div>
@@ -99,8 +99,8 @@
                     </div>
                     <div class="w-100 w-full md:w-1/2 p-2" data-pg-name="grid__item">
                         <div class="rounded bg-grey" data-pg-name="panel">
-                            <div class="md:flex">
-                                <div class="md:w-1/2 flex">
+                            <div class="md:flex" data-pg-name="panel__grid">
+                                <div class="md:w-1/2 flex" data-pg-name="panel__grid-item">
                                     <div class="flex" data-pg-name="data-group--inline">
                                         <div>Chart</div>
                                         <div class="text-size--jumbo">28</div>
@@ -109,7 +109,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="md:w-1/2 flex">
+                                <div class="md:w-1/2 flex" data-pg-name="panel__grid-item">
                                     <div class="w-1/3">
                                         <div data-pg-name="data-group">
                                             <div class="text-center text-size--x-large">21</div>
@@ -126,9 +126,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="text-center my-4 uppercase text-size--tiny">Most Active Services</div>
-                            <div class="md:flex">
-                                <div class="md:w-1/2">
+                            <div class="text-center my-4 uppercase text-size--tiny" data-pg-name="panel__divider">Most Active Services</div>
+                            <div class="md:flex" data-pg-name="panel__grid">
+                                <div class="md:w-1/2" data-pg-name="panel__grid-item">
                                     <div class="layout-block flex items-start" data-pg-name="data-group-media">
                                         <img src="https://images.unsplash.com/photo-1472289065668-ce650ac443d2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjIwOTIyfQq=85&fm=jpg&crop=faces&cs=srgb&w=50&h=50&fit=crop" class="rounded"/>
                                         <div class="ml-2" data-pg-name="data-group-media__content">
@@ -151,7 +151,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="md:w-1/2">
+                                <div class="md:w-1/2" data-pg-name="panel__grid-item">
                                     <div class="layout-block flex items-start" data-pg-name="data-group-media">
                                         <img src="https://images.unsplash.com/photo-1472289065668-ce650ac443d2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjIwOTIyfQq=85&fm=jpg&crop=faces&cs=srgb&w=50&h=50&fit=crop" class="rounded"/>
                                         <div class="ml-2" data-pg-name="data-group-media__content">
@@ -181,13 +181,13 @@
                 <div class="flex flex-wrap -mx-2" data-pg-name="grid">
                     <div class="w-100 w-full md:w-1/3 p-2" data-pg-name="grid__item">
                         <div class="h-full rounded bg-grey-darker" data-pg-name="panel">
-                            <div class="layout-block" data-pg-name="chart-container">Chart</div>
-                            <div class="flex">
-                                <div class="w-1/2">
+                            <div class="layout-block ratio-block--16x9" data-pg-name="chart-container">Chart</div>
+                            <div class="flex" data-pg-name="panel__grid">
+                                <div class="w-1/2" data-pg-name="panel__grid-item">
                                     <div class="text-center text-size--x-large">23.6 </div>
                                     <div class="text-center text-size--small">Active Task</div>
                                 </div>
-                                <div class="w-1/2 border-l">
+                                <div class="w-1/2" data-pg-name="panel__grid-item">
                                     <div class="text-center text-size--x-large">139</div>
                                     <div class="text-center text-size--small">Pending Tasks</div>
                                 </div>
@@ -195,27 +195,27 @@
                         </div>
                     </div>
                     <div class="w-100 w-full md:w-1/3 p-2" data-pg-name="grid__item">
-                        <div class="h-full bg-grey rounded">
-                            <div class="layout-block flex flex-col items-center">
+                        <div class="h-full rounded bg-grey-darker" data-pg-name="panel">
+                            <div class="flex flex-col items-center layout-block">
                                 <div class="text-size--xx-large">23.6
                                     <span>ms</span>
                                 </div>
-                                <div class="text-size--medium">Task Wait Time</div>
+                                <div class="text-size--medium text-color--saffron">Task Wait Time</div>
                                 <span class="rounded-full text-white text-size--small bg-green py-1 px-2">32%</span>
                             </div>
-                            <div class="layout-block">Chart</div>
+                            <div class="layout-block ratio-block--16x9" data-pg-name="chart-container">Chart</div>
                         </div>
                     </div>
                     <div class="w-100 w-full md:w-1/3 p-2" data-pg-name="grid__item">
-                        <div class="h-full bg-grey rounded">
+                        <div class="h-full bg-grey rounded" data-pg-name="panel">
                             <div class="layout-block flex flex-col items-center">
-                                <div class="text-size--x-large">12
-                                    <span>%</span>
+                                <div class="text-size--xx-large">12
+                                    <span class="text-size--x-large">%</span>
                                 </div>
                                 <div class="text-size--medium">Task Wait Time</div>
                                 <span class="rounded-full text-white text-size--small bg-green py-1 px-2">32%</span>
                             </div>
-                            <div class="layout-block">Chart</div>
+                            <div class="layout-block ratio-block--16x9" data-pg-name="chart-container">Chart</div>
                         </div>
                     </div>
                 </div>
