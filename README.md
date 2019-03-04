@@ -22,6 +22,17 @@ There is still a challenge in naming components. I think I need names for more c
 
 ---
 
+**Dealing with seemingly random occourences: 03/03/19 10mins**
+
+The struggle here was thinking on how to approach naming divs.
+
+Taking a step back, I needed to identify what the differeneces were. Once those had been identified I found the solution.
+
+The difference here was the borders on grid items. So my solution was to add a modifier class to the panel-grid__item div that will
+the add the borders that are needed.
+
+---
+
 **Extracting CSS Colors and Typography: 27/02/19 1h 40mins**
 
 This was pretty straight forward. Where the challenge lay was in setting the type sizes and variables.
