@@ -44,14 +44,14 @@
       <li data-pg-name="dashboard__menu-item" class="dashboard__menu-item">
         <a data-pg-name="dashboard__menu-link" class="dashboard__menu-link">Overview</a>
       </li>
-      <li class="flex-auto md:flex-initial text-size--small">
-        <a class="block border-solid hover:border-blue mr-2 py-2 text-white border-b-4 border-grey-darkest">Overview</a>
+      <li data-pg-name="dashboard__menu-item" class="dashboard__menu-item">
+        <a data-pg-name="dashboard__menu-link" class="dashboard__menu-link">Services</a>
       </li>
-      <li class="flex-auto md:flex-initial text-size--small">
-        <a class="block border-solid hover:border-blue mr-2 py-2 text-white border-b-4 border-grey-darkest">Overview</a>
+      <li data-pg-name="dashboard__menu-item" class="dashboard__menu-item">
+        <a data-pg-name="dashboard__menu-link" class="dashboard__menu-link">Tasks</a>
       </li>
-      <li class="flex-auto md:flex-initial text-size--small">
-        <a class="block border-solid hover:border-blue mr-2 py-2 text-white border-b-4 border-grey-darkest">Overview</a>
+      <li data-pg-name="dashboard__menu-item" class="dashboard__menu-item">
+        <a data-pg-name="dashboard__menu-link" class="dashboard__menu-link">Hosts</a>
       </li>
     </ul>
     <div data-pg-name="grid" class="grid">
@@ -61,9 +61,9 @@
             <span class="text-color--dark-mint-green">Healthy</span>
           </div>
           <div data-pg-name="panel__grid" class="panel__grid">
-            <div data-pg-name="panel__grid-item" class="panel__grid-item">
+            <div data-pg-name="panel__grid-item" class="panel__grid-item panel__grid-item--two-thirds">
               <div data-pg-name="data-group" class="data-group">
-                <div class="text-size--small">CPU Allocation</div>
+                <div class="text-size--small text-color--basalt-grey">CPU Allocation</div>
                 <div class="text-size--xx-large">83
                   <span class="text-size--x-large">%</span>
                   <span data-pg-name="data-label" class="data-label">32%</span>
@@ -73,9 +73,9 @@
                 </div>
               </div>
             </div>
-            <div data-pg-name="panel__grid-item" class="panel__grid-item">
+            <div data-pg-name="panel__grid-item" class="panel__grid-item panel__grid-item--third">
               <div data-pg-name="data-group" class="data-group">
-                <div>Memory Allocation</div>
+                <div class="text-color--basalt-grey">Memory Allocation</div>
                 <div class="text-size--large">83%
                   <span class="rounded-full text-white text-size--small bg-green py-1 px-2">32%</span>
                 </div>
@@ -84,7 +84,7 @@
                 </div>
               </div>
               <div data-pg-name="data-group" class="data-group">
-                <div>Disk Allocation</div>
+                <div class="text-color--basalt-grey">Disk Allocation</div>
                 <div class="text-size--large">83%
                   <span class="rounded-full text-white text-size--small bg-green py-1 px-2">32%</span>
                 </div>
@@ -99,77 +99,79 @@
       <div data-pg-name="grid__item" class="grid__item grid__item--half">
         <div data-pg-name="panel" class="panel">
           <div data-pg-name="panel__grid" class="panel__grid">
-            <div data-pg-name="panel__grid-item" class="panel__grid-item">
+            <div data-pg-name="panel__grid-item" class="panel__grid-item flex-1">
               <div data-pg-name="data-group--inline" class="data-group--inline">
                 <div>Chart</div>
                 <div class="text-size--jumbo">28</div>
-                <div class="text-size--small">Total
+                <div class="text-size--small text-color--basalt-grey">Total
                   <br>Services
                 </div>
               </div>
             </div>
-            <div data-pg-name="panel__grid-item" class="panel__grid-item">
-              <div class="w-1/3">
+            <div data-pg-name="panel__grid-item" class="panel__grid-item panel__grid panel__grid-item--half">
+              <div class="panel__grid-item--third">
                 <div data-pg-name="data-group" class="data-group">
                   <div class="text-center text-size--x-large">21</div>
-                  <div class="text-center text-size--small">Active</div>
+                  <div class="text-center text-size--small text-color--dark-mint-green">Active</div>
                 </div>
               </div>
-              <div class="w-1/3 border-l">
+              <div class="panel__grid-item--third panel__grid-item--border-left flex flex-col justify-center">
                 <div class="text-center text-size--x-large">7</div>
-                <div class="text-center text-size--small">Idle</div>
+                <div class="text-center text-size--small text-color--basalt-grey">Idle</div>
               </div>
-              <div class="w-1/3 border-l">
+              <div class="panel__grid-item--third panel__grid-item--border-left">
                 <div class="text-center text-size--x-large">1</div>
-                <div class="text-center text-size--small">Stressed</div>
+                <div class="text-center text-size--small text-color--neon-fuchsia">Stressed</div>
               </div>
             </div>
           </div>
-          <div data-pg-name="panel__divider" class="panel__divider">Most Active Services</div>
+          <div data-pg-name="panel__divider" class="panel__divider">
+            <span>Most Active Services</span>
+          </div>
           <div data-pg-name="panel__grid" class="panel__grid">
-            <div data-pg-name="panel__grid-item" class="panel__grid-item">
+            <div data-pg-name="panel__grid-item" class="panel__grid-item panel__grid-item--half">
               <div data-pg-name="data-group-media" class="data-group-media">
                 <img src="https://images.unsplash.com/photo-1472289065668-ce650ac443d2?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjIwOTIyfQq=85&amp;fm=jpg&amp;crop=faces&amp;cs=srgb&amp;w=50&amp;h=50&amp;fit=crop" class="rounded">
                 <div data-pg-name="data-group-media__content" class="data-group-media__content">
                   <div class="text-size--small">Marathon (Dev)</div>
-                  <div class="text-size--xx-small">Active (247 Tasks)</div>
+                  <div class="text-size--xx-small text-color--dark-mint-green">Active (247 Tasks)</div>
+                </div>
+              </div>
+              <div data-pg-name="data-group-media" class="data-group-media">
+                <img src="https://images.unsplash.com/photo-1472289065668-ce650ac443d2?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjIwOTIyfQq=85&amp;fm=jpg&amp;crop=faces&amp;cs=srgb&amp;w=50&amp;h=50&amp;fit=crop" class="rounded">
+                <div data-pg-name="data-group-media__content" class="data-group-media__content">
+                  <div class="text-size--small">Spark (Data)</div>
+                  <div class="text-size--xx-small text-color--neon-fuchsia">Stressed (192 Tasks)</div>
                 </div>
               </div>
               <div data-pg-name="data-group-media" class="data-group-media">
                 <img src="https://images.unsplash.com/photo-1472289065668-ce650ac443d2?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjIwOTIyfQq=85&amp;fm=jpg&amp;crop=faces&amp;cs=srgb&amp;w=50&amp;h=50&amp;fit=crop" class="rounded">
                 <div data-pg-name="data-group-media__content" class="data-group-media__content">
                   <div class="text-size--small">Marathon (Dev)</div>
-                  <div class="text-size--xx-small">Active (247 Tasks)</div>
-                </div>
-              </div>
-              <div data-pg-name="data-group-media" class="data-group-media">
-                <img src="https://images.unsplash.com/photo-1472289065668-ce650ac443d2?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjIwOTIyfQq=85&amp;fm=jpg&amp;crop=faces&amp;cs=srgb&amp;w=50&amp;h=50&amp;fit=crop" class="rounded">
-                <div data-pg-name="data-group-media__content" class="data-group-media__content">
-                  <div class="text-size--small">Marathon (Dev)</div>
-                  <div class="text-size--xx-small">Active (247 Tasks)</div>
+                  <div class="text-size--xx-small text-color--dark-mint-green">Active (247 Tasks)</div>
                 </div>
               </div>
             </div>
-            <div data-pg-name="panel__grid-item" class="panel__grid-item">
+            <div data-pg-name="panel__grid-item" class="panel__grid-item panel__grid-item--half">
               <div data-pg-name="data-group-media" class="data-group-media">
                 <img src="https://images.unsplash.com/photo-1472289065668-ce650ac443d2?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjIwOTIyfQq=85&amp;fm=jpg&amp;crop=faces&amp;cs=srgb&amp;w=50&amp;h=50&amp;fit=crop" class="rounded">
                 <div data-pg-name="data-group-media__content" class="data-group-media__content">
                   <div class="text-size--small">Marathon (Dev)</div>
-                  <div class="text-size--xx-small">Active (247 Tasks)</div>
+                  <div class="text-size--xx-small text-color--dark-mint-green">Active (247 Tasks)</div>
                 </div>
               </div>
               <div data-pg-name="data-group-media" class="data-group-media">
                 <img src="https://images.unsplash.com/photo-1472289065668-ce650ac443d2?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjIwOTIyfQq=85&amp;fm=jpg&amp;crop=faces&amp;cs=srgb&amp;w=50&amp;h=50&amp;fit=crop" class="rounded">
                 <div data-pg-name="data-group-media__content" class="data-group-media__content">
                   <div class="text-size--small">Marathon (Dev)</div>
-                  <div class="text-size--xx-small">Active (247 Tasks)</div>
+                  <div class="text-size--xx-small text-color--dark-mint-green">Active (247 Tasks)</div>
                 </div>
               </div>
               <div data-pg-name="data-group-media" class="data-group-media">
                 <img src="https://images.unsplash.com/photo-1472289065668-ce650ac443d2?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjIwOTIyfQq=85&amp;fm=jpg&amp;crop=faces&amp;cs=srgb&amp;w=50&amp;h=50&amp;fit=crop" class="rounded">
                 <div data-pg-name="data-group-media__content" class="data-group-media__content">
                   <div class="text-size--small">Marathon (Dev)</div>
-                  <div class="text-size--xx-small">Active (247 Tasks)</div>
+                  <div class="text-size--xx-small text-color--dark-mint-green">Active (247 Tasks)</div>
                 </div>
               </div>
             </div>
@@ -182,20 +184,20 @@
         <div data-pg-name="panel" class="panel">
           <div data-pg-name="chart-container" class="chart-container">Chart</div>
           <div data-pg-name="panel__grid" class="panel__grid">
-            <div data-pg-name="panel__grid-item" class="panel__grid-item">
+            <div data-pg-name="panel__grid-item" class="panel__grid-item panel__grid-item--half">
               <div class="text-center text-size--x-large">23.6 </div>
-              <div class="text-center text-size--small">Active Task</div>
+              <div class="text-center text-size--small text-color--dark-mint-green">Active Task</div>
             </div>
-            <div data-pg-name="panel__grid-item" class="panel__grid-item">
+            <div data-pg-name="panel__grid-item" class="panel__grid-item panel__grid-item--half panel__grid-item--border-left">
               <div class="text-center text-size--x-large">139</div>
-              <div class="text-center text-size--small">Pending Tasks</div>
+              <div class="text-center text-size--small text-color--saffron">Pending Tasks</div>
             </div>
           </div>
         </div>
       </div>
       <div data-pg-name="grid__item" class="grid__item grid__item--third">
         <div data-pg-name="panel" class="panel">
-          <div class="flex flex-col items-center layout-block">
+          <div class="flex flex-col items-center">
             <div class="text-size--xx-large">23.6
               <span>ms</span>
             </div>
@@ -207,11 +209,11 @@
       </div>
       <div data-pg-name="grid__item" class="grid__item grid__item--third">
         <div data-pg-name="panel" class="panel">
-          <div class="layout-block flex flex-col items-center">
+          <div class="flex flex-col items-center">
             <div class="text-size--xx-large">12
               <span class="text-size--x-large">%</span>
             </div>
-            <div class="text-size--medium">Task Wait Time</div>
+            <div class="text-size--medium text-color--neon-fuchsia">Task Wait Time</div>
             <span class="rounded-full text-white text-size--small bg-green py-1 px-2">32%</span>
           </div>
           <div data-pg-name="chart-container" class="chart-container">Chart</div>

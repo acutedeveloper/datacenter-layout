@@ -4,7 +4,13 @@ Recreating a layout designed in a graphics application in code. This is an exerc
 
 ## Progress Log
 
-**Task: 04/03/19 10mins**
+**Task: 04/03/19 1hr**
+
+Polishing up classes. Was somewhat tired this evening, so struggled on the text with horizontal rule and the panel grid items.
+
+---
+
+**Task: 04/03/19 1hr**
 
 Wrapping up adding names to blocks before running script.
 

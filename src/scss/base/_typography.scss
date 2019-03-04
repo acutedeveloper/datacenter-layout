@@ -54,6 +54,10 @@ body {
 
 .text-size {
 
+  &--jumbo, &--x-large, &--xx-large {
+    font-weight: 200;
+  }
+
   &--jumbo{
     font-size: $text-size__jumbo;
     line-height: $line-height__jumbo;

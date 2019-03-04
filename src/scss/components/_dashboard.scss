@@ -8,13 +8,14 @@
   }
 
   &__heading {
-    @apply mb-2 text-size--x-large text-white;
-    font-weight: normal;
+    @apply mb-2 text-white;
+    font-weight: 200;
+    font-size: $text-size__x-large;
+    line-height: $line-height__x-large;
   }
 
   &__menu {
     @apply flex mb-4 border-b border-solid list-reset border-grey-dark;
-
   }
 
   &__menu-item {
@@ -25,7 +26,12 @@
   }
 
   &__menu-link {
-    @apply block border-solid mr-2 py-2 text-white border-b-4 border-grey-darkest;
+    @apply block  mr-2 py-2 text-white;
+    border-bottom: 4px solid $sky-captain;
+
+    &:hover {
+      border-color: $navy-purple;
+    }
 
   }
 

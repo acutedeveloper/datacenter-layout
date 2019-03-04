@@ -1,5 +1,6 @@
 .wrapper{
-	@apply max-w-3xl w-full m-auto;
+	@apply w-full m-auto;
+    max-width: 90rem; // 1440px
 	@screen md {
         @apply flex;
     }
