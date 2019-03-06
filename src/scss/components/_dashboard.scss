@@ -1,37 +1,36 @@
 .dashboard {
   @apply flex-auto p-4;
-
   background-color: $sky-captain;
 
   @screen md {
     @apply p-6;
+    padding-top: 3rem;
   }
 
   &__heading {
-    @apply mb-2 text-white;
+    @apply mb-3 text-white;
     font-weight: 200;
     font-size: $text-size__x-large;
     line-height: $line-height__x-large;
   }
 
   &__menu {
-    @apply flex mb-4 border-b border-solid list-reset border-grey-dark;
+    @apply flex mb-6 border-b border-solid list-reset border-grey-dark;
   }
 
   &__menu-item {
-    @apply flex-auto text-size--small;
-    @screen md {
-      @apply flex-initial;
-    }
+    @apply text-size--small;
   }
 
   &__menu-link {
-    @apply block  mr-2 py-2 text-white;
+    @apply block mr-4 py-2 text-white;
     border-bottom: 4px solid $sky-captain;
     text-decoration: none;
+    color: $basalt-grey;
 
     &:hover, &--active {
       border-color: $navy-purple;
+      color: $white;
     }
 
   }

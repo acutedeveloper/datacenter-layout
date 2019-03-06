@@ -1,8 +1,10 @@
 .vertical-menu {
   @apply h-full flex-col justify-between hidden;
+  border-top: 1px solid grey;
 
   @screen lg {
     @apply flex;
+    border-top: none;
   }
 
   &__list {
@@ -39,3 +41,8 @@
   }
 
 }
+
+.js-vertical-menu--show {
+  display: block;
+}
+

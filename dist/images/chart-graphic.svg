@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300px" height="160px" viewBox="0 0 300 160" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>chart-graphic</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-629.000000, -1504.000000)">
+            <g id="Group" transform="translate(627.000000, 1504.000000)">
+                <path d="M0.595703125,0.5 L304.508759,0.5" id="Line" stroke-opacity="0.5" stroke="#979797" stroke-linecap="square"></path>
+                <rect id="Rectangle" fill-opacity="0.1" fill="#D8D8D8" x="39" y="1" width="38" height="159"></rect>
+                <rect id="Rectangle-Copy-2" fill-opacity="0.1" fill="#D8D8D8" x="114" y="1" width="38" height="159"></rect>
+                <rect id="Rectangle-Copy-3" fill-opacity="0.1" fill="#D8D8D8" x="189" y="1" width="38" height="159"></rect>
+                <rect id="Rectangle-Copy-4" fill-opacity="0.1" fill="#D8D8D8" x="264" y="1" width="38" height="159"></rect>
+                <polygon id="Chart-Fill" fill-opacity="0.4" fill="#9351E5" points="0 94.6248321 20.4203741 110.769532 38.9335313 138.653006 57.3497701 123.551673 76.7784607 127.97951 96.3075311 116.638919 116.293503 110.769532 133.896319 98.7067751 153.020408 69.5378217 172.267377 79.4017096 191.277241 69.5378217 209.510027 85.2855224 228.753534 79.4017096 247.545332 85.2855224 266.53962 69.5378217 286.200223 79.4017096 303 57 303 160 0 160"></polygon>
+                <polyline id="Chart-Path" stroke="#9351E5" stroke-width="2" stroke-linecap="round" points="0 94.7847231 20.4203741 110.998032 38.9335313 139 57.3497701 123.834492 76.7784607 128.281145 96.3075311 116.892362 116.293503 110.998032 133.896319 98.8840127 153.020408 69.5911026 172.267377 79.4969082 191.277241 69.5911026 209.510027 85.4057249 228.753534 79.4969082 247.545332 85.4057249 266.53962 69.5911026 286.200223 79.4969082 303 57"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

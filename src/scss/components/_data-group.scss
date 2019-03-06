@@ -1,5 +1,9 @@
 .data-group{
 
+	&--centered {
+		@apply flex flex-col items-center py-5;
+	}
+
 	&--inline{
 		@apply flex;
 	}

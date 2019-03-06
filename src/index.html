@@ -1,232 +1,323 @@
 <!DOCTYPE HTML>
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <title>New page</title>
-  <link href="/css/stylesheet.css" rel="stylesheet" type="text/css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>New page</title>
+    <link href="/css/stylesheet.css" rel="stylesheet" type="text/css">
 </head>
 <body class="bg-grey">
 <div data-pg-name="wrapper" class="wrapper">
 
-  <!--sidebar-->
-  <aside data-pg-name="sidebar" class="sidebar">
-    <div data-pg-name="title-block" class="title-block">
-      <img src="https://images.unsplash.com/photo-1550246209-e4395d8ae5eb?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjIwOTIyfQq=85&amp;fm=jpg&amp;crop=faces&amp;cs=srgb&amp;w=60&amp;h=60&amp;fit=crop" data-pg-name="title-block__logo" class="title-block__logo">
-      <div data-pg-name="title-block__labels" class="title-block__labels">
-        <div class="text-size--large">Datacenter Name</div>
-        <div class="text-size--small text-color--navy-purple">172.03.12.1</div>
-      </div>
-      <button data-pg-name="sidebar__menu-toggle" class="sidebar__menu-toggle"><i class="icon-menu"></i></button>
-    </div>
-    <div data-pg-name="vertical-menu" class="vertical-menu">
-      <ul data-pg-name="vertical-menu__list" class="vertical-menu__list">
-        <li data-pg-name="vertical-menu__list-item" class="vertical-menu__list-item">
-          <a data-pg-name="vertical-menu__link" href="#" class="vertical-menu__link">Activity<span class="rounded-full text-white text-size--small bg-green py-1 px-2">32%</span></a>
-        </li>
-        <li data-pg-name="vertical-menu__list-item" class="vertical-menu__list-item">
-          <a data-pg-name="vertical-menu__link" href="#" class="vertical-menu__link vertical-menu__link--active">Services</a>
-        </li>
-        <li data-pg-name="vertical-menu__list-item" class="vertical-menu__list-item">
-          <a data-pg-name="vertical-menu__link" href="#" class="vertical-menu__link">Modules</a>
-        </li>
-        <li data-pg-name="vertical-menu__list-item" class="vertical-menu__list-item">
-          <a data-pg-name="vertical-menu__link" href="#" class="vertical-menu__link">Universe<span class="rounded-full text-white text-size--small bg-green py-1 px-2">3</span></a>
-        </li>
-        <li data-pg-name="vertical-menu__list-item" class="vertical-menu__list-item">
-          <a data-pg-name="vertical-menu__link" href="#" class="vertical-menu__link">Datacenter</a>
-        </li>
+    <!--sidebar-->
+    <aside data-pg-name="sidebar" class="sidebar js-vertical-menu">
 
-      </ul>
-      <button class="sidebar__service-button" type="button"><i class="icon-terminal"></i>Open Command Line</button>
-    </div>
-  </aside>
+        <!--title block-->
+        <div data-pg-name="title-block" class="title-block">
+            <img src="https://images.unsplash.com/photo-1550246209-e4395d8ae5eb?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjIwOTIyfQq=85&amp;fm=jpg&amp;crop=faces&amp;cs=srgb&amp;w=60&amp;h=60&amp;fit=crop"
+                 data-pg-name="title-block__logo" class="title-block__logo">
+            <div data-pg-name="title-block__labels" class="title-block__labels">
+                <div class="text-size--large">Datacenter Name</div>
+                <div class="text-size--small text-color--navy-purple">172.03.12.1</div>
+            </div>
+            <button data-pg-name="sidebar__menu-toggle" class="sidebar__menu-toggle js-vertical-menu-toggle"><i class="icon-menu"></i></button>
+        </div>
 
-  <!--main content-->
-  <main data-pg-name="dashboard" class="dashboard">
-    <h2 data-pg-name="dashboard__heading" class="dashboard__heading">Activity</h2>
-    <ul data-pg-name="dashboard__menu" class="dashboard__menu">
-      <li data-pg-name="dashboard__menu-item" class="dashboard__menu-item">
-        <a data-pg-name="dashboard__menu-link" href="#" class="dashboard__menu-link dashboard__menu-link--active">Overview</a>
-      </li>
-      <li data-pg-name="dashboard__menu-item" class="dashboard__menu-item">
-        <a data-pg-name="dashboard__menu-link" href="#" class="dashboard__menu-link">Services</a>
-      </li>
-      <li data-pg-name="dashboard__menu-item" class="dashboard__menu-item">
-        <a data-pg-name="dashboard__menu-link" href="#" class="dashboard__menu-link">Tasks</a>
-      </li>
-      <li data-pg-name="dashboard__menu-item" class="dashboard__menu-item">
-        <a data-pg-name="dashboard__menu-link" href="#" class="dashboard__menu-link">Hosts</a>
-      </li>
-    </ul>
-    <div data-pg-name="grid" class="grid">
-      <div data-pg-name="grid__item" class="grid__item grid__item--half">
-        <div data-pg-name="panel" class="panel">
-          <div data-pg-name="panel__heading" class="panel__heading">System Status
-            <span class="text-color--dark-mint-green">Healthy</span>
-          </div>
-          <div data-pg-name="panel__grid" class="panel__grid">
-            <div data-pg-name="panel__grid-item" class="panel__grid-item panel__grid-item--two-thirds">
-              <div data-pg-name="data-group" class="data-group">
-                <div class="text-size--small text-color--basalt-grey">CPU Allocation</div>
-                <div class="text-size--xx-large">83
-                  <span class="text-size--x-large">%</span>
-                  <span data-pg-name="data-label" class="data-label">32%</span>
-                </div>
-                <div data-pg-name="chart-container" class="chart-container">
-                  <p>Chart</p>
-                </div>
-              </div>
-            </div>
-            <div data-pg-name="panel__grid-item" class="panel__grid-item panel__grid-item--third">
-              <div data-pg-name="data-group" class="data-group">
-                <div class="text-color--basalt-grey">Memory Allocation</div>
-                <div class="text-size--large">83%
-                  <span class="rounded-full text-white text-size--small bg-green py-1 px-2">32%</span>
-                </div>
-                <div data-pg-name="chart-container" class="chart-container">
-                  <p>Chart</p>
-                </div>
-              </div>
-              <div data-pg-name="data-group" class="data-group">
-                <div class="text-color--basalt-grey">Disk Allocation</div>
-                <div class="text-size--large">83%
-                  <span class="rounded-full text-white text-size--small bg-green py-1 px-2">32%</span>
-                </div>
-                <div data-pg-name="chart-container" class="chart-container">
-                  <p>Chart</p>
-                </div>
-              </div>
-            </div>
-          </div>
+        <!--vertical menu-->
+        <div data-pg-name="vertical-menu" class="vertical-menu js-vertical-menu-list">
+            <ul data-pg-name="vertical-menu__list" class="vertical-menu__list">
+                <li data-pg-name="vertical-menu__list-item" class="vertical-menu__list-item">
+                    <a data-pg-name="vertical-menu__link" href="#" class="vertical-menu__link">Activity<span
+                            class="rounded-full text-white text-size--small bg-green py-1 px-2">32%</span></a>
+                </li>
+                <li data-pg-name="vertical-menu__list-item" class="vertical-menu__list-item">
+                    <a data-pg-name="vertical-menu__link" href="#"
+                       class="vertical-menu__link vertical-menu__link--active">Services</a>
+                </li>
+                <li data-pg-name="vertical-menu__list-item" class="vertical-menu__list-item">
+                    <a data-pg-name="vertical-menu__link" href="#" class="vertical-menu__link">Modules</a>
+                </li>
+                <li data-pg-name="vertical-menu__list-item" class="vertical-menu__list-item">
+                    <a data-pg-name="vertical-menu__link" href="#" class="vertical-menu__link">Universe</a>
+                </li>
+                <li data-pg-name="vertical-menu__list-item" class="vertical-menu__list-item">
+                    <a data-pg-name="vertical-menu__link" href="#" class="vertical-menu__link">Datacenter</a>
+                </li>
+
+            </ul>
+            <button class="sidebar__service-button" type="button"><i class="icon-terminal"></i>Open Command Line
+            </button>
         </div>
-      </div>
-      <div data-pg-name="grid__item" class="grid__item grid__item--half">
-        <div data-pg-name="panel" class="panel">
-          <div data-pg-name="panel__grid" class="panel__grid">
-            <div data-pg-name="panel__grid-item" class="panel__grid-item flex-1">
-              <div data-pg-name="data-group--inline" class="data-group--inline">
-                <div>Chart</div>
-                <div class="text-size--jumbo">28</div>
-                <div class="text-size--small text-color--basalt-grey">Total
-                  <br>Services
+    </aside>
+
+    <!--main content-->
+    <main data-pg-name="dashboard" class="dashboard">
+        <h2 data-pg-name="dashboard__heading" class="dashboard__heading">Activity</h2>
+
+        <!--dashboard menu-->
+        <ul data-pg-name="dashboard__menu" class="dashboard__menu">
+            <li data-pg-name="dashboard__menu-item" class="dashboard__menu-item">
+                <a data-pg-name="dashboard__menu-link" href="#"
+                   class="dashboard__menu-link dashboard__menu-link--active">Overview</a>
+            </li>
+            <li data-pg-name="dashboard__menu-item" class="dashboard__menu-item">
+                <a data-pg-name="dashboard__menu-link" href="#" class="dashboard__menu-link">Services</a>
+            </li>
+            <li data-pg-name="dashboard__menu-item" class="dashboard__menu-item">
+                <a data-pg-name="dashboard__menu-link" href="#" class="dashboard__menu-link">Tasks</a>
+            </li>
+            <li data-pg-name="dashboard__menu-item" class="dashboard__menu-item">
+                <a data-pg-name="dashboard__menu-link" href="#" class="dashboard__menu-link">Hosts</a>
+            </li>
+        </ul>
+
+        <!--2 column grid-->
+        <div data-pg-name="grid" class="grid">
+            <div data-pg-name="grid__item" class="grid__item grid__item--half">
+                <div data-pg-name="panel" class="panel">
+                    <div data-pg-name="panel__heading" class="panel__heading">System Status
+                        <span class="text-color--dark-mint-green">Healthy</span>
+                    </div>
+                    <div data-pg-name="panel__grid" class="panel__grid">
+                        <div data-pg-name="panel__grid-item" class="panel__grid-item panel__grid-item--two-thirds">
+                            <div data-pg-name="data-group" class="data-group">
+                                <div class="text-size--small text-color--basalt-grey pb-1">CPU Allocation</div>
+                                <div class="text-size--xx-large pb-4">83
+                                    <span class="text-size--x-large">%</span>
+                                    <span data-pg-name="data-label" class="data-label">32%</span>
+                                </div>
+                                <div data-pg-name="chart-container" class="chart-container chart-container--no-padding">
+                                    <img src="/images/chart-graphic.svg" alt="Chart">
+                                </div>
+                            </div>
+                        </div>
+                        <div data-pg-name="panel__grid-item" class="panel__grid-item panel__grid-item--third">
+                            <div data-pg-name="data-group" class="data-group">
+                                <div class="text-color--basalt-grey pb-1">Memory Allocation</div>
+                                <div class="text-size--large pb-2">83%
+                                    <span class="rounded-full text-white text-size--xx-small bg-green px-2">32%</span>
+                                </div>
+                                <div data-pg-name="chart-container" class="chart-container chart-container--no-padding mb-4">
+                                    <img src="/images/chart-graphic.svg" alt="Chart">
+                                </div>
+                            </div>
+                            <div data-pg-name="data-group" class="data-group">
+                                <div class="text-color--basalt-grey pb-1">Disk Allocation</div>
+                                <div class="text-size--large pb-2">83%
+                                    <span class="rounded-full text-white text-size--small bg-green py-1 px-2">32%</span>
+                                </div>
+                                <div data-pg-name="chart-container" class="chart-container chart-container--no-padding">
+                                    <img src="/images/chart-graphic.svg" alt="Chart">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-            <div data-pg-name="panel__grid-item" class="panel__grid-item panel__grid panel__grid-item--half">
-              <div class="panel__grid-item--auto">
-                <div data-pg-name="data-group" class="data-group">
-                  <div class="text-center text-size--x-large">21</div>
-                  <div class="text-center text-size--small text-color--dark-mint-green">Active</div>
+            <div data-pg-name="grid__item" class="grid__item grid__item--half">
+                <div data-pg-name="panel" class="panel">
+                    <div data-pg-name="panel__grid" class="panel__grid">
+                        <div data-pg-name="panel__grid-item" class="panel__grid-item flex-1">
+                            <div data-pg-name="data-group--inline" class="data-group--inline items-center">
+                                <div class="chart-container chart-container--no-padding mr-4">
+                                    <img src="/images/oval-chart.svg" alt="">
+                                </div>
+                                <div class="text-size--jumbo mr-2">28</div>
+                                <div class="text-size--small text-color--basalt-grey">Total
+                                    <br>Services
+                                </div>
+                            </div>
+                        </div>
+                        <div data-pg-name="panel__grid-item"
+                             class="panel__grid-item panel__grid panel__grid-item--half">
+                            <div class="panel__grid-item--auto">
+                                <div data-pg-name="data-group" class="data-group">
+                                    <div class="text-center text-size--x-large">21</div>
+                                    <div class="text-center text-size--small text-color--dark-mint-green">Active</div>
+                                </div>
+                            </div>
+                            <div class="panel__grid-item--auto panel__grid-item--border-left">
+                                <div class="text-center text-size--x-large">7</div>
+                                <div class="text-center text-size--small text-color--basalt-grey">Idle</div>
+                            </div>
+                            <div class="panel__grid-item--auto panel__grid-item--border-left">
+                                <div class="text-center text-size--x-large">1</div>
+                                <div class="text-center text-size--small text-color--neon-fuchsia">Stressed</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-pg-name="panel__divider" class="panel__divider">
+                        <span>Most Active Services</span>
+                    </div>
+                    <div data-pg-name="panel__grid" class="panel__grid">
+                        <div data-pg-name="panel__grid-item" class="panel__grid-item panel__grid-item--half">
+                            <div data-pg-name="data-group-media" class="data-group-media">
+
+                                <svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1"
+                                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g id="Artboard" transform="translate(-627.000000, -1679.000000)"
+                                           fill="#999999">
+                                            <rect id="Rectangle" x="627" y="1679" width="50" height="50" rx="4"></rect>
+                                        </g>
+                                    </g>
+                                </svg>
+
+                                <div data-pg-name="data-group-media__content" class="data-group-media__content">
+                                    <div class="text-size--small">Marathon (Dev)</div>
+                                    <div class="text-size--xx-small text-color--dark-mint-green">Active (247 Tasks)
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-pg-name="data-group-media" class="data-group-media">
+
+                                <svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1"
+                                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g id="Artboard" transform="translate(-627.000000, -1679.000000)"
+                                           fill="#999999">
+                                            <rect id="Rectangle" x="627" y="1679" width="50" height="50" rx="4"></rect>
+                                        </g>
+                                    </g>
+                                </svg>
+
+                                <div data-pg-name="data-group-media__content" class="data-group-media__content">
+                                    <div class="text-size--small">Spark (Data)</div>
+                                    <div class="text-size--xx-small text-color--neon-fuchsia">Stressed (92 Tasks)</div>
+                                </div>
+                            </div>
+                            <div data-pg-name="data-group-media" class="data-group-media">
+
+                                <svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1"
+                                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g id="Artboard" transform="translate(-627.000000, -1679.000000)"
+                                           fill="#999999">
+                                            <rect id="Rectangle" x="627" y="1679" width="50" height="50" rx="4"></rect>
+                                        </g>
+                                    </g>
+                                </svg>
+
+                                <div data-pg-name="data-group-media__content" class="data-group-media__content">
+                                    <div class="text-size--small">Marathon (Dev)</div>
+                                    <div class="text-size--xx-small text-color--dark-mint-green">Active (247 Tasks)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-pg-name="panel__grid-item" class="panel__grid-item panel__grid-item--half">
+                            <div data-pg-name="data-group-media" class="data-group-media">
+
+                                <svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1"
+                                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g id="Artboard" transform="translate(-627.000000, -1679.000000)"
+                                           fill="#999999">
+                                            <rect id="Rectangle" x="627" y="1679" width="50" height="50" rx="4"></rect>
+                                        </g>
+                                    </g>
+                                </svg>
+
+                                <div data-pg-name="data-group-media__content" class="data-group-media__content">
+                                    <div class="text-size--small">Marathon (Marketing)</div>
+                                    <div class="text-size--xx-small text-color--dark-mint-green">Active (38 Tasks)
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-pg-name="data-group-media" class="data-group-media">
+
+                                <svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1"
+                                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g id="Artboard" transform="translate(-627.000000, -1679.000000)"
+                                           fill="#999999">
+                                            <rect id="Rectangle" x="627" y="1679" width="50" height="50" rx="4"></rect>
+                                        </g>
+                                    </g>
+                                </svg>
+
+                                <div data-pg-name="data-group-media__content" class="data-group-media__content">
+                                    <div class="text-size--small">Kubernetes (Dev)</div>
+                                    <div class="text-size--xx-small text-color--dark-mint-green">Active (38 Tasks)
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-pg-name="data-group-media" class="data-group-media">
+
+                                <svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1"
+                                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g id="Artboard" transform="translate(-627.000000, -1679.000000)"
+                                           fill="#999999">
+                                            <rect id="Rectangle" x="627" y="1679" width="50" height="50" rx="4"></rect>
+                                        </g>
+                                    </g>
+                                </svg>
+
+                                <div data-pg-name="data-group-media__content" class="data-group-media__content">
+                                    <div class="text-size--small">Marathon (Finance)</div>
+                                    <div class="text-size--xx-small text-color--dark-mint-green">Active (39 Tasks)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="panel__grid-item--auto panel__grid-item--border-left">
-                <div class="text-center text-size--x-large">7</div>
-                <div class="text-center text-size--small text-color--basalt-grey">Idle</div>
-              </div>
-              <div class="panel__grid-item--auto panel__grid-item--border-left">
-                <div class="text-center text-size--x-large">1</div>
-                <div class="text-center text-size--small text-color--neon-fuchsia">Stressed</div>
-              </div>
             </div>
-          </div>
-          <div data-pg-name="panel__divider" class="panel__divider">
-            <span>Most Active Services</span>
-          </div>
-          <div data-pg-name="panel__grid" class="panel__grid">
-            <div data-pg-name="panel__grid-item" class="panel__grid-item panel__grid-item--half">
-              <div data-pg-name="data-group-media" class="data-group-media">
-                <img src="https://images.unsplash.com/photo-1472289065668-ce650ac443d2?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjIwOTIyfQq=85&amp;fm=jpg&amp;crop=faces&amp;cs=srgb&amp;w=50&amp;h=50&amp;fit=crop" class="rounded">
-                <div data-pg-name="data-group-media__content" class="data-group-media__content">
-                  <div class="text-size--small">Marathon (Dev)</div>
-                  <div class="text-size--xx-small text-color--dark-mint-green">Active (247 Tasks)</div>
-                </div>
-              </div>
-              <div data-pg-name="data-group-media" class="data-group-media">
-                <img src="https://images.unsplash.com/photo-1472289065668-ce650ac443d2?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjIwOTIyfQq=85&amp;fm=jpg&amp;crop=faces&amp;cs=srgb&amp;w=50&amp;h=50&amp;fit=crop" class="rounded">
-                <div data-pg-name="data-group-media__content" class="data-group-media__content">
-                  <div class="text-size--small">Spark (Data)</div>
-                  <div class="text-size--xx-small text-color--neon-fuchsia">Stressed (192 Tasks)</div>
-                </div>
-              </div>
-              <div data-pg-name="data-group-media" class="data-group-media">
-                <img src="https://images.unsplash.com/photo-1472289065668-ce650ac443d2?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjIwOTIyfQq=85&amp;fm=jpg&amp;crop=faces&amp;cs=srgb&amp;w=50&amp;h=50&amp;fit=crop" class="rounded">
-                <div data-pg-name="data-group-media__content" class="data-group-media__content">
-                  <div class="text-size--small">Marathon (Dev)</div>
-                  <div class="text-size--xx-small text-color--dark-mint-green">Active (247 Tasks)</div>
-                </div>
-              </div>
-            </div>
-            <div data-pg-name="panel__grid-item" class="panel__grid-item panel__grid-item--half">
-              <div data-pg-name="data-group-media" class="data-group-media">
-                <img src="https://images.unsplash.com/photo-1472289065668-ce650ac443d2?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjIwOTIyfQq=85&amp;fm=jpg&amp;crop=faces&amp;cs=srgb&amp;w=50&amp;h=50&amp;fit=crop" class="rounded">
-                <div data-pg-name="data-group-media__content" class="data-group-media__content">
-                  <div class="text-size--small">Marathon (Dev)</div>
-                  <div class="text-size--xx-small text-color--dark-mint-green">Active (247 Tasks)</div>
-                </div>
-              </div>
-              <div data-pg-name="data-group-media" class="data-group-media">
-                <img src="https://images.unsplash.com/photo-1472289065668-ce650ac443d2?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjIwOTIyfQq=85&amp;fm=jpg&amp;crop=faces&amp;cs=srgb&amp;w=50&amp;h=50&amp;fit=crop" class="rounded">
-                <div data-pg-name="data-group-media__content" class="data-group-media__content">
-                  <div class="text-size--small">Marathon (Dev)</div>
-                  <div class="text-size--xx-small text-color--dark-mint-green">Active (247 Tasks)</div>
-                </div>
-              </div>
-              <div data-pg-name="data-group-media" class="data-group-media">
-                <img src="https://images.unsplash.com/photo-1472289065668-ce650ac443d2?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjIwOTIyfQq=85&amp;fm=jpg&amp;crop=faces&amp;cs=srgb&amp;w=50&amp;h=50&amp;fit=crop" class="rounded">
-                <div data-pg-name="data-group-media__content" class="data-group-media__content">
-                  <div class="text-size--small">Marathon (Dev)</div>
-                  <div class="text-size--xx-small text-color--dark-mint-green">Active (247 Tasks)</div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-    </div>
-    <div data-pg-name="grid" class="grid">
-      <div data-pg-name="grid__item" class="grid__item grid__item--third">
-        <div data-pg-name="panel" class="panel">
-          <div data-pg-name="chart-container" class="chart-container">Chart</div>
-          <div data-pg-name="panel__grid" class="panel__grid">
-            <div data-pg-name="panel__grid-item" class="panel__grid-item panel__grid-item--half">
-              <div class="text-center text-size--x-large">23.6 </div>
-              <div class="text-center text-size--small text-color--dark-mint-green">Active Task</div>
+
+        <!--3 column grid-->
+        <div data-pg-name="grid" class="grid">
+            <div data-pg-name="grid__item" class="grid__item grid__item--third">
+                <div data-pg-name="panel" class="panel">
+                    <div data-pg-name="chart-container" class="chart-container">
+                        <img src="/images/chart-graphic.svg" alt="Chart">
+                    </div>
+                    <div data-pg-name="panel__grid" class="panel__grid">
+                        <div data-pg-name="panel__grid-item" class="panel__grid-item panel__grid-item--half">
+                            <div class="text-center text-size--x-large">23.6</div>
+                            <div class="text-center text-size--small text-color--dark-mint-green">Active Task</div>
+                        </div>
+                        <div data-pg-name="panel__grid-item"
+                             class="panel__grid-item panel__grid-item--half panel__grid-item--border-left">
+                            <div class="text-center text-size--x-large">139</div>
+                            <div class="text-center text-size--small text-color--saffron">Pending Tasks</div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div data-pg-name="panel__grid-item" class="panel__grid-item panel__grid-item--half panel__grid-item--border-left">
-              <div class="text-center text-size--x-large">139</div>
-              <div class="text-center text-size--small text-color--saffron">Pending Tasks</div>
+            <div data-pg-name="grid__item" class="grid__item grid__item--third">
+                <div data-pg-name="panel" class="panel">
+                    <div class="data-group--centered">
+                        <div class="text-size--xx-large mb-1">23.6
+                            <span>ms</span>
+                        </div>
+                        <div class="text-size--medium text-color--saffron mb-2">Task Wait Time</div>
+                        <span class="rounded-full text-white text-size--small bg-green py-1 px-2">32%</span>
+                    </div>
+                    <div data-pg-name="chart-container" class="chart-container">
+                        <img src="/images/chart-graphic.svg" alt="Chart">
+                    </div>
+                </div>
             </div>
-          </div>
+            <div data-pg-name="grid__item" class="grid__item grid__item--third">
+                <div data-pg-name="panel" class="panel">
+                    <div class="data-group--centered">
+                        <div class="text-size--xx-large mb-1">12
+                            <span class="text-size--x-large">%</span>
+                        </div>
+                        <div class="text-size--medium text-color--neon-fuchsia mb-2">Task Wait Time</div>
+                        <span class="rounded-full text-white text-size--small bg-green py-1 px-2">32%</span>
+                    </div>
+                    <div data-pg-name="chart-container" class="chart-container">
+                        <img src="/images/chart-graphic.svg" alt="Chart">
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div data-pg-name="grid__item" class="grid__item grid__item--third">
-        <div data-pg-name="panel" class="panel">
-          <div class="flex flex-col items-center">
-            <div class="text-size--xx-large">23.6
-              <span>ms</span>
-            </div>
-            <div class="text-size--medium text-color--saffron">Task Wait Time</div>
-            <span class="rounded-full text-white text-size--small bg-green py-1 px-2">32%</span>
-          </div>
-          <div data-pg-name="chart-container" class="chart-container">Chart</div>
-        </div>
-      </div>
-      <div data-pg-name="grid__item" class="grid__item grid__item--third">
-        <div data-pg-name="panel" class="panel">
-          <div class="flex flex-col items-center">
-            <div class="text-size--xx-large">12
-              <span class="text-size--x-large">%</span>
-            </div>
-            <div class="text-size--medium text-color--neon-fuchsia">Task Wait Time</div>
-            <span class="rounded-full text-white text-size--small bg-green py-1 px-2">32%</span>
-          </div>
-          <div data-pg-name="chart-container" class="chart-container">Chart</div>
-        </div>
-      </div>
-    </div>
-  </main>
+    </main>
 </div>
+<script src="/js/all.js" type="text/javascript"></script>
 </body>

@@ -15,6 +15,11 @@ function fonts(){
         .pipe(gulp.dest(paths.fonts.dest));
 }
 
+function images(){
+    return gulp.src(paths.images.src)
+        .pipe(gulp.dest(paths.images.dest));
+}
+
 function scss() {
     const sass = require('gulp-sass');
     const autoprefixer = require('autoprefixer');
@@ -77,8 +82,9 @@ function watch() {
     gulp.watch(paths.js.src, gulp.series(js, reload));
     gulp.watch(paths.html.src, gulp.series(html, reload));
     gulp.watch(paths.fonts.src, gulp.series(fonts, reload));
+    gulp.watch(paths.images.src, gulp.series(images, reload));
 
 }
 
-gulp.task('default', gulp.series(html, scss, js, fonts));
-gulp.task('serve', gulp.series(html, scss, js, fonts, browserSync, watch));
+gulp.task('default', gulp.series(html, scss, js, fonts, images));
+gulp.task('serve', gulp.series(html, scss, js, fonts, images, browserSync, watch));

@@ -60,10 +60,11 @@
   }
 
   &__divider {
-    @apply text-center m-4 uppercase px-4 text-size--tiny;
+    @apply text-center my-4 uppercase px-4 text-size--tiny;
     width: 100%;
     text-align: center;
     position: relative;
+    color: $basalt-grey;
 
     &:before,
     &:after {
@@ -72,8 +73,8 @@
       bottom: -1px;
       line-height: 0;
       height: 50%;
-      width: 100%;
-      border-top: 1px solid red;
+      width: 50%;
+      border-top: 1px solid $border-grey;
       z-index: 1;
     }
 

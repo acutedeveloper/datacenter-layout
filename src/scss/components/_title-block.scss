@@ -10,11 +10,12 @@
     display: block;
     @apply text-center;
     margin: 3rem 0;
+    padding: 0;
   }
   &__logo {
     @apply rounded-full mr-4 bg-white border border-grey p-1;
     height: auto;
-    @screen md {
+    @screen lg {
       @apply mr-0;
     }
   }

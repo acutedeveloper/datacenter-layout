@@ -8,7 +8,7 @@ module.exports = {
     },
     images: {
         src: [
-            './src/images/**/*.{jpg,png}',
+            './src/images/**/*.{jpg,png,svg}',
         ],
         dest: './dist/images',
     },
