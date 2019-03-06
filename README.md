@@ -4,6 +4,12 @@ Recreating a layout designed in a graphics application in code. This is an exerc
 
 ## Progress Log
 
+**Task: 05 - 06/03/19 1hr 30m**
+
+Polishing up classes.
+
+---
+
 **Task: 04/03/19 1hr**
 
 Polishing up classes. Was somewhat tired this evening, so struggled on the text with horizontal rule and the panel grid items.
@@ -27,7 +33,7 @@ Wishlist Item:
 
 The struggle here was thinking on how to approach naming divs.
 
-Taking a step back, I needed to identify what the differeneces were. Once those had been identified I found the solution.
+Taking a step back, I needed to identify what the differences were. Once those had been identified I found the solution.
 
 The difference here was the borders on grid items. So my solution was to add a modifier class to the panel-grid__item div that will
 the add the borders that are needed.

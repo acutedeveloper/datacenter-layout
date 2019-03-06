@@ -1,15 +1,41 @@
-.vertical-menu{
-	@apply h-full flex-col justify-between hidden;
-	@screen md {
-        @apply flex;
+.vertical-menu {
+  @apply h-full flex-col justify-between hidden;
+
+  @screen lg {
+    @apply flex;
+  }
+
+  &__list {
+    @apply list-reset;
+  }
+
+  &__link {
+    @apply block p-2 flex justify-between items-center;
+    padding-left: 4rem;
+    border-left: 3px solid $white;
+    text-decoration: none;
+    color: $basalt-grey;
+    position: relative;
+    height: 4rem;
+
+    &:before {
+      content: '';
+      position: absolute;
+      height: 2rem;
+      width: 2rem;
+      background-color: $basalt-grey;
+      left: 1.5rem;
     }
-	&__list {
-	@apply list-reset;
-	
-}
-&__link {
-	@apply block p-2 flex justify-between items-center border-solid border-l-4 border-white;
-	
-}
+
+    &:hover, &--active {
+      background-color: $navy-purple__tint;
+      border-color: $navy-purple;
+      color: $navy-purple;
+
+      &:before {
+        background-color: $navy-purple;
+      }
+    }
+  }
 
 }

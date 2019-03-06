@@ -28,8 +28,9 @@
   &__menu-link {
     @apply block  mr-2 py-2 text-white;
     border-bottom: 4px solid $sky-captain;
+    text-decoration: none;
 
-    &:hover {
+    &:hover, &--active {
       border-color: $navy-purple;
     }
 

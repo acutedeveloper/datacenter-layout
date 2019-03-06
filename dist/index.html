@@ -10,48 +10,55 @@
 </head>
 <body class="bg-grey">
 <div data-pg-name="wrapper" class="wrapper">
+
+  <!--sidebar-->
   <aside data-pg-name="sidebar" class="sidebar">
     <div data-pg-name="title-block" class="title-block">
       <img src="https://images.unsplash.com/photo-1550246209-e4395d8ae5eb?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjIwOTIyfQq=85&amp;fm=jpg&amp;crop=faces&amp;cs=srgb&amp;w=60&amp;h=60&amp;fit=crop" data-pg-name="title-block__logo" class="title-block__logo">
       <div data-pg-name="title-block__labels" class="title-block__labels">
-        <div data-pg-name="title-block__title" class="title-block__title">Datacenter Name</div>
-        <div data-pg-name="title-block__sub-title" class="title-block__sub-title">172.03.12.1</div>
+        <div class="text-size--large">Datacenter Name</div>
+        <div class="text-size--small text-color--navy-purple">172.03.12.1</div>
       </div>
+      <button data-pg-name="sidebar__menu-toggle" class="sidebar__menu-toggle"><i class="icon-menu"></i></button>
     </div>
-    <button data-pg-name="sidebar__menu-toggle" class="sidebar__menu-toggle">O</button>
     <div data-pg-name="vertical-menu" class="vertical-menu">
       <ul data-pg-name="vertical-menu__list" class="vertical-menu__list">
         <li data-pg-name="vertical-menu__list-item" class="vertical-menu__list-item">
-          <a data-pg-name="vertical-menu__link" class="vertical-menu__link">Link<span class="rounded-full text-white text-size--small bg-green py-1 px-2">32%</span></a>
+          <a data-pg-name="vertical-menu__link" href="#" class="vertical-menu__link">Activity<span class="rounded-full text-white text-size--small bg-green py-1 px-2">32%</span></a>
         </li>
-        <li>
-          <a class="block p-2 flex justify-between items-center hover:bg-purple-lightest hover:text-purple border-solid border-l-4 border-white hover:border-purple">Link</a>
+        <li data-pg-name="vertical-menu__list-item" class="vertical-menu__list-item">
+          <a data-pg-name="vertical-menu__link" href="#" class="vertical-menu__link vertical-menu__link--active">Services</a>
         </li>
-        <li>
-          <a class="block p-2 flex justify-between items-center hover:bg-purple-lightest hover:text-purple border-solid border-l-4 border-white hover:border-purple">Link</a>
+        <li data-pg-name="vertical-menu__list-item" class="vertical-menu__list-item">
+          <a data-pg-name="vertical-menu__link" href="#" class="vertical-menu__link">Modules</a>
         </li>
-        <li>
-          <a class="block p-2 flex justify-between items-center hover:bg-purple-lightest hover:text-purple border-solid border-l-4 border-white hover:border-purple">Link</a>
-          <a class="block p-2 flex justify-between items-center hover:bg-purple-lightest hover:text-purple border-solid border-l-4 border-white hover:border-purple">Link</a>
+        <li data-pg-name="vertical-menu__list-item" class="vertical-menu__list-item">
+          <a data-pg-name="vertical-menu__link" href="#" class="vertical-menu__link">Universe<span class="rounded-full text-white text-size--small bg-green py-1 px-2">3</span></a>
         </li>
+        <li data-pg-name="vertical-menu__list-item" class="vertical-menu__list-item">
+          <a data-pg-name="vertical-menu__link" href="#" class="vertical-menu__link">Datacenter</a>
+        </li>
+
       </ul>
-      <button class="block w-full border-t border-solid p-4 border-grey hover:bg-purple-lightest sidebar__service-button">Open Command Line</button>
+      <button class="sidebar__service-button" type="button"><i class="icon-terminal"></i>Open Command Line</button>
     </div>
   </aside>
+
+  <!--main content-->
   <main data-pg-name="dashboard" class="dashboard">
     <h2 data-pg-name="dashboard__heading" class="dashboard__heading">Activity</h2>
     <ul data-pg-name="dashboard__menu" class="dashboard__menu">
       <li data-pg-name="dashboard__menu-item" class="dashboard__menu-item">
-        <a data-pg-name="dashboard__menu-link" class="dashboard__menu-link">Overview</a>
+        <a data-pg-name="dashboard__menu-link" href="#" class="dashboard__menu-link dashboard__menu-link--active">Overview</a>
       </li>
       <li data-pg-name="dashboard__menu-item" class="dashboard__menu-item">
-        <a data-pg-name="dashboard__menu-link" class="dashboard__menu-link">Services</a>
+        <a data-pg-name="dashboard__menu-link" href="#" class="dashboard__menu-link">Services</a>
       </li>
       <li data-pg-name="dashboard__menu-item" class="dashboard__menu-item">
-        <a data-pg-name="dashboard__menu-link" class="dashboard__menu-link">Tasks</a>
+        <a data-pg-name="dashboard__menu-link" href="#" class="dashboard__menu-link">Tasks</a>
       </li>
       <li data-pg-name="dashboard__menu-item" class="dashboard__menu-item">
-        <a data-pg-name="dashboard__menu-link" class="dashboard__menu-link">Hosts</a>
+        <a data-pg-name="dashboard__menu-link" href="#" class="dashboard__menu-link">Hosts</a>
       </li>
     </ul>
     <div data-pg-name="grid" class="grid">
@@ -109,17 +116,17 @@
               </div>
             </div>
             <div data-pg-name="panel__grid-item" class="panel__grid-item panel__grid panel__grid-item--half">
-              <div class="panel__grid-item--third">
+              <div class="panel__grid-item--auto">
                 <div data-pg-name="data-group" class="data-group">
                   <div class="text-center text-size--x-large">21</div>
                   <div class="text-center text-size--small text-color--dark-mint-green">Active</div>
                 </div>
               </div>
-              <div class="panel__grid-item--third panel__grid-item--border-left flex flex-col justify-center">
+              <div class="panel__grid-item--auto panel__grid-item--border-left">
                 <div class="text-center text-size--x-large">7</div>
                 <div class="text-center text-size--small text-color--basalt-grey">Idle</div>
               </div>
-              <div class="panel__grid-item--third panel__grid-item--border-left">
+              <div class="panel__grid-item--auto panel__grid-item--border-left">
                 <div class="text-center text-size--x-large">1</div>
                 <div class="text-center text-size--small text-color--neon-fuchsia">Stressed</div>
               </div>

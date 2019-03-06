@@ -1,7 +1,7 @@
 .wrapper{
 	@apply w-full m-auto;
     max-width: 90rem; // 1440px
-	@screen md {
+	@screen lg {
         @apply flex;
     }
 }

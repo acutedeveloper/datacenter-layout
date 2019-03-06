@@ -21,6 +21,10 @@
   &__grid-item {
     @apply w-full p-2;
 
+    &--auto {
+      flex: auto;
+    }
+
     &--half {
       @screen md {
         @apply w-1/2;

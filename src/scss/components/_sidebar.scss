@@ -1,13 +1,34 @@
-.sidebar{
-	@apply  flex justify-between bg-white;
-	@screen md {
-        @apply w-1/5 flex-col;
+.sidebar {
+  @apply flex justify-between bg-white;
+  flex-direction: column;
+  position: relative;
+
+  @screen lg {
+    @apply w-1/5 flex-col;
+    max-width: 15.625rem;
+  }
+
+  &__menu-toggle {
+    padding: 1rem;
+    font-size: $text-size__large;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+
+    @screen lg {
+      @apply hidden;
     }
-	&__menu-toggle {
-	@apply layout-block;
-	@screen md {
-        @apply hidden;
+  }
+
+  &__service-button {
+    @apply block w-full border-t border-solid p-4 border-grey;
+    color: $navy-purple;
+
+    &:hover {
+      background-color: $navy-purple__tint;
     }
-}
+
+  }
 
 }

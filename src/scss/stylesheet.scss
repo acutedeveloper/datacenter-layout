@@ -1,4 +1,6 @@
 //@import "vendors/normalize"; /* Not needed if using Tailwind */
+@import "vendors/fontello";
+
 @tailwind preflight;
 
 @import "config/variables";
