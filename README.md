@@ -4,6 +4,18 @@ Recreating a layout designed in a graphics application in code. This is an exerc
 
 ## Progress Log
 
+**Task: 7/03/19 2hr**
+
+Adding in the placeholder images for the graphs. For the final classes I can see the value in having some utility classes in the mix.
+I think my mind was undecided if I needed componentize certain components.
+
+My take aways is that using only utility classes for elements eases the need to think about how to categorize a 
+group of elements into a component.
+
+Final JavaScript for the header menu was added.
+
+---
+
 **Task: 05 - 06/03/19 1hr 30m**
 
 Polishing up classes.
